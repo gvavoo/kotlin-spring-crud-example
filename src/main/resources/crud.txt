@@ -1,0 +1,9 @@
+curl --request GET http://localhost:8087/users
+
+curl --request GET http://localhost:8087/users/1
+
+curl --header "Content-Type: application/json" --request POST --data '{"email":"george@test.com","firstName":"George", "lastName":"Test",
+"phone":"123456545"}' http://localhost:8087/users
+
+curl --header "Content-Type: application/json" --request PUT --data '{"email":"jim@test.com","firstName":"Jim", "lastName":"Test",
+"phone":"123456545"}' http://localhost:8087/users/1

@@ -1,0 +1,82 @@
+{
+	"variables": [],
+	"info": {
+		"name": "kotlin-spring-crud-example",
+		"_postman_id": "d50e9ae4-d524-1f54-07c0-f7f570908575",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get one user",
+			"request": {
+				"url": "http://localhost:8087/users/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"url": "http://localhost:8087/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"url": "http://localhost:8087/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"email\": \"fffdsfd@test.com\",\n        \"firstName\": \"fsfds\",\n        \"lastName\": \"sdfsfsf\",\n        \"phone\": \"43242423423\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit user",
+			"request": {
+				"url": "http://localhost:8087/users/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"email\": \"fffdsfd@test.com\",\n        \"firstName\": \"dfsdfsdfsdf\",\n        \"lastName\": \"ffffffffffffffff\",\n        \"phone\": \"43242423423\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
